@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+  <form action="signup.php" method="POST">
+    <h2>Sign up</h2>
+
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required />
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required />
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required />
+
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" name="confirm_password" id="confirm_password" required />
+
+    <div class="toggle-password">
+      <input type="checkbox" id="showPassword" onclick="togglePassword()" />
+      <label for="showPassword" style="margin-left: 10px;">Show Passwords</label>
+    </div>
+
+    <button type="submit">Sign up</button>
+
+    <!-- Already have an account section -->
+    <p style="text-align: center; margin-top: 15px;">
+      Already have an account? <a href="login.html">Login here</a>
+    </p>
+  </form>
+
+  <script>
+    function togglePassword() {
+      const pass = document.getElementById("password");
+      const confirm = document.getElementById("confirm_password");
+      pass.type = pass.type === "password" ? "text" : "password";
+      confirm.type = confirm.type === "password" ? "text" : "password";
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+

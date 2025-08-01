@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+  <form action="login.php" method="POST">
+    <h2>Login</h2>
+
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required />
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required />
+
+    <div class="toggle-password">
+      <input type="checkbox" id="showPassword" onclick="togglePassword()" />
+      <label for="showPassword" style="margin-left: 10px;">Show Password</label>
+    </div>
+
+    <button type="submit">Login</button>
+    
+    <p style="text-align: center; margin-top: 10px;">
+      Don't have an account? <a href="signup.html">Sign up here</a>
+    </p>
+  </form>
+
+  <script>
+    function togglePassword() {
+      const pass = document.getElementById("password");
+      pass.type = pass.type === "password" ? "text" : "password";
+    }
+  </script>
+
+</body>
+</html>
+
