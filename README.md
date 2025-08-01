@@ -8,7 +8,7 @@
 link-https://ibb.co/0pLjHXhz
 
 **Dashboard Page:**
-[![Dashboard Screenshot](https://ibb.co/kVhdpy0Z)
+![Dashboard Screenshot]https://ibb.co/kVhdpy0Z
 
 **Check this to visit the project page:** --> http://localhost/task2/login.html
 
